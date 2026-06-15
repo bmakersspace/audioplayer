@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio Library</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <h2>Folders</h2>
+      <div id="folders"></div>
+    </div>
+
+    <div class="main">
+      <h1>Audio Library</h1>
+
+      <div id="tracks"></div>
+
+      <div class="player">
+        <h3 id="nowPlaying">Nothing Selected</h3>
+
+        <audio id="audioPlayer"></audio>
+
+        <button onclick="playAudio()">▶ Play</button>
+        <button onclick="pauseAudio()">⏸ Pause</button>
+
+        <div class="sliderRow">
+          <span>Volume</span>
+          <input
+            type="range"
+            id="volumeSlider"
+            min="0"
+            max="1"
+            step="0.01"
+            value="1"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
